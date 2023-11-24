@@ -212,7 +212,7 @@ pipeline {
                         }
                     }
                     // https://www.jenkins.io/doc/pipeline/steps/pipeline-utility-steps/#zip-create-zip-file
-                    zip zipFile: 'buch.zip', archive: false, dir: 'dist'
+                    zip zipFile: 'buch.zip', dir: 'dist'
                     // jobs/buch/builds/.../archive/buch.zip
                     archiveArtifacts 'buch.zip'
                 }
